@@ -2,77 +2,85 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-
-
-    
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog</title>
-<style>
-    header{
-        background-color: rgba(6, 43, 207, 0.956);
-        color: rgb(236, 231, 235);
-        text-align: center;
-        max-width: 800px;
-        margin: 0 auto ;
-        border: 5px solid rgba(15, 20, 20, 0.64);
-        padding: 16px;
-    }
-    main{
-        background-color: rgba(9, 101, 186, 0.79);
-        color: rgb(221, 221, 228);
-        text-align: center;
-        max-width: 800px;
-        margin: 0 auto ;
-        border: 5px solid rgb(234, 7, 215);
-        padding: 16px;
-        display: flex;
-    }
-    img{
-        width: 80px;
-        height: 80px;
-        font-weight: bold;
-    }
+        <title>Meu blog</title>
+        <style>
+            header{
+                background-color: rgb(255, 7, 7);
+                color: rgb(16, 204, 204);
+                text-align: center;
+                max-width: 800px;
+                margin: 0 auto;
+                border: 5px solid rgba(243, 240, 240, 0.039);
+                padding: 16px;
+            }
+            main{
+                background-color: rgb(36, 110, 175);
+                color: rgb(210, 3, 233);
+                text-align: center;
+                max-width: 800px;
+                margin: 0 auto;
+                border: 5px solid rgba(244, 240, 240, 0.016);
+                padding: 16px;
+                
+            }
+            article{
+                display: flex;   
+            }         
+            img{
+                    width: 80px;
+                    height: 80px;
+           
+            }
 
-    .artigo-autor {
-        font-weight: bold;
-    }
+            .artigo-autor {
+                font-weight: bold;
+            }
 
-
-</style>
-
+        </style>
     </head>
     <body>
         <header>
-            <h1>👾Mundo Sigma👾</h1>
-            <p>Vamos dar um play▶️</p>
+            <h1>Clube de .</h1>
+            <p> Venha se </p>
         </header>
 
-    <main>
-        <img src="https://media1.tenor.com/m/lPcexeCDyZ8AAAAd/gentleman-giga-chad.gif" alt="Uma imagem de capa temática para o site Mundo Pixel. Em um ambiente escuro iluminado por luzes LED verde-neon, um gamer veste headset e joga em um setup moderno com gabinete transparente, teclado e mouse iluminados. Sobre a mesa, há dois monitores exibindo jogos e a logo 'Mundo Pixel', além de consoles clássicos como Super Nintendo, um PlayStation 5 e caixas de jogos. Na parede, destaca-se um letreiro luminoso em neon verde com o nome 'Mundo Pixel'.">
-    <div></div>
-        <h2>Sua próxima aventura começa aqui,Os melhores preços em consoles e games so aqui no Mundo Sigma</h2>
-        <p>Sejam Bem vindos ao mundo Sigma </p>
-        <p class="artigo-autor">Por:Luis Guilherme</p>
-            <button>🍷<span>0</span></button>
-            <button>🗿<span>0</span></button>  
-          <div>
-    </main>
+        <main>
+           <article>
 
+            <img src="https://media1.tenor.com/m/mmXj5AeF2YkAAAAd/sigma.gif" alt="Sigma👾">
+            <div>
+                <h2>Um post legal</h2>
+                <p>Sejam bem vindos ao Clube de Farmador de aura labubonicos do Colégio Branca da Mota Fernandes.</p>
+                <p class="artigo-autor">Por: Luis</p>
+                <button>🗿 <span>0</span></button>
+                <button>🍷<span>0</span></button>
+            </div>
+            </article>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNrk3KVHpY-8hSSrv7go1AJHgNvyF8c5s0jpQOMRfobqeW6e5PNd6D7_k&s=10" alt="Sigma👾">
+            <div>
+                <h2>Meu terceiro post</h2>
+                <p>Sejam bem vindos ao  do Colégio Branca da Mota Fernandes.</p>
+                <p class="artigo-autor"> Sigmos</p>
+                <button>🗿 <span>0</span></button>
+                <button>🍷<span>0</span></button>
+            </article>
+        <main>
+       
 </body>
-  <script>
- const botao = document.querySelectorAll("main buttton");
-botoes.forEach(function (botao) {      
- botao.addEventListener("click", botaoClicado);
- 
+<script>
+  const botoes = document.querySelectorAll("main button");
+   botoes.forEach(function (botao) {
+        botao.addEventListener("click", botaoClicado);
+
         function botaoClicado() {
-         console.log("fui clicado");
-              let texto = botao.querySelector("span");
-                     texto.textContent++;
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            texto.textContent++;
         }
     });
-
-
+   
 </script>
+
 
 </html>
