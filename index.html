@@ -5,97 +5,82 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Meu blog</title>
         <style>
-            
-            body {
-                background-color: #121212; 
-                color: #ffffff; 
-                font-family: sans-serif;
-            }
-
-            header {
-                background-color: rgb(7, 7, 7);
-                color: #ffffff; 
+            header{
+                background-color: rgb(12, 5, 54);
+                color: azure;
                 text-align: center;
                 max-width: 800px;
                 margin: 0 auto;
-                border: 5px solid rgba(243, 240, 240, 0.039);
+                border: 5px solid rgba(255, 0, 0, 0.039);
                 padding: 16px;
             }
-
-            main {
-                background-color: #222222; 
-                color: #ffffff; 
+            main{
+                background-color: aliceblue;
+                color: blue;
                 text-align: center;
                 max-width: 800px;
                 margin: 0 auto;
-                border: 5px solid rgba(244, 240, 240, 0.016);
+                border: 5px solid rgba(255, 0, 0, 0.016);
                 padding: 16px;
+                
             }
-
-            article {
+            article{
                 display: flex;   
-                align-items: center;
-                gap: 16px;
-                margin-bottom: 20px;
-                text-align: left;
             }         
-
-            img {
-                width: 80px;
-                height: 80px;
-                object-fit: cover;
+            img{
+                    width: 80px;
+                    height: 80px;
+           
             }
 
             .artigo-autor {
                 font-weight: bold;
             }
 
-            button {
-                cursor: pointer;
-            }
         </style>
     </head>
     <body>
         <header>
-            <h1>Clube dos Sigmas da Mota</h1>
-            <p>Venha se tornar um Mestre Supremo da Aura!</p>
+            <h1>Clube dos Sigmos labubonicos</h1>
+            <p> Seja bem-vindo</p>
         </header>
 
         <main>
-            <article>
-                <img src="https://media1.tenor.com/m/mmXj5AeF2YkAAAAd/sigma.gif" alt="Sigma👾">
-                <div>
-                    <h2>A Arte do Farm de Aura 🗿🍷</h2>
-                    <p>Sejam bem-vindos ao QG dos Farmadores de Aura Labubônicos do Colégio Branca da Mota Fernandes! Aqui a conversa é fina e a aura é infinita.</p>
-                    <p class="artigo-autor">Por: Eliezer (O Mestre da Aura)</p>
-                    <button>🗿 <span>0</span></button>
-                    <button>🍷 <span>0</span></button>
-                </div>
-            </article>
+           <article>
 
-            <article>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNrk3KVHpY-8hSSrv7go1AJHgNvyF8c5s0jpQOMRfobqeW6e5PNd6D7_k&s=10" alt="Sigma👾">
-                <div>
-                    <h2>Guia Definitivo do Respeito</h2>
-                    <p>Seja bem-vindo à tropa! No Colégio Branca da Mota Fernandes, se você não farmar pelo menos +10.000 de aura por dia, tá fazendo errado.</p>
-                    <p class="artigo-autor">Por: Os Sigmos</p>
-                    <button>🗿 <span>0</span></button>
-                    <button>🍷 <span>0</span></button>
-                </div>
+            <img src="https://media1.tenor.com/m/mmXj5AeF2YkAAAAd/sigma.gif" alt="Sigma👾">
+            <div>
+                <h2>Meu primeiro post</h2>
+                <p>Sejam bem vindos ao Clube de Farmador de aura labubonicos do Colégio Branca da Mota Fernandes.</p>
+                <p class="artigo-autor">Por: Luis</p>
+                <button>🗿 <span>0</span></button>
+                <button>🍷<span>0</span></button>
+            </div>
             </article>
-        </main>
+              <img src="https://i.pinimg.com/originals/99/25/51/99255166a77cb3e8d77d015d31af81a7.gif" alt="Sigma👾">
+            <div>
+                <h2>Meu segundo post</h2>
+                <p>Ultima Post de Como Farma Aura.</p>
+                <p class="artigo-autor"> Sigmos</p>
+                <button>6+7=⁶🤷⁷ <span>0</span></button>
+                <button>🍷<span>0</span></button>
+            </article>
+        <main>
        
-        <script>
-            const botoes = document.querySelectorAll("main button");
-            botoes.forEach(function (botao) {
-                botao.addEventListener("click", botaoClicado);
+</body>
+<script>
+  const botoes = document.querySelectorAll("main button");
+   botoes.forEach(function (botao) {
+        botao.addEventListener("click", botaoClicado);
 
-                function botaoClicado() {
-                    console.log("fui clicado");
-                    let texto = botao.querySelector("span");
-                    texto.textContent++;
-                }
-            });
-        </script>
-    </body>
+        function botaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            texto.textContent++;
+        }
+    });
+   
+</script>
+
+
 </html>
